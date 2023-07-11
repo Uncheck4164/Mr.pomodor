@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e29a2b42ba.js" crossorigin="anonymous"></script></head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Mr.Pomodoro</h1>
+            <p>El tiempo bien invertido es la clave del éxito a largo plazo.</p>
+        </div>
+            <nav>
+                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-language"></i>
+            </nav>
+    </header>
+    <section id="cards-container">
+        <div class="session-details">
+            <div class="top">
+                <div class="header">
+                    <div class="header-title">
+                        <h2>Tiempo</h2>
+                        <p>Ciclos pomodoro</p>
+                    </div>
+                    <div class="header-icono">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="frame1">
+                    <div class="frame1-title">
+                        <h3>
+                            Modo actual:
+                        </h3>
+                        <p>Describe en el estado que te encuentras</p>
+                    </div>
+                    <div class="modo-actual">
+                        <p>Focus</p>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                </div>
+                <div class="frame1">
+                    <div class="frame1-title">
+                    <h3>Proximo modo:</h3>
+                    <p>Proximo ciclo que se actiavara</p>
+                </div>
+                    <div class="proximo-modo">
+                        <p>pausa larga</p>
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="circle">
+                    <div id="timer">
+                        <h2>90:00</h2>
+                    </div>
+                    <div class="buttons">
+                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="todo-list">
+            <div class="header">
+                <div class="header-title">
+                    <h2>Lista de tareas</h2>
+                    <p>Objetivos de la sesión</p>
+                </div>
+                <div class="header-icono">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>  
+            </div>
+            <div class="line"></div>
+            <div class="list-todo">
+            <label class="task">
+                <input type="checkbox" class="my-checkbox">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic deserunt voluptatem velit laudantium veniam obcaecati fugit et unde totam ipsum facilis beatae ea in nesciunt, doloribus architecto, illum natus omnis.</p>
+              </label>
+              <label class="task">
+                <input type="checkbox" class="my-checkbox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque cumque eos totam? Ipsum modi cum vero alias asperiores tempora recusandae adipisci est, velit iusto maxime, hic, dolorum facere iste!</p>
+            </label>
+              <label class="task">
+                <input type="checkbox" class="my-checkbox">
+                Tarea 3
+              </label>
+            </div>
+            <div class="input-container">
+                <!--Añade un input con un boton-->
+                <input type="text" placeholder="Añade una tarea">
+                <button id="add">Añadir</button>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+</body>
+</html>

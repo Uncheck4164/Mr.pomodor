@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+body {
+    background-color: #18181B;
+    padding: 1em 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header h1{
+    color: #E4E4E7;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+header p {
+    color: #A1A1AA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+nav{
+    margin-left: 20px ;
+
+}
+nav i{
+    color: #71717A;
+    font-size: 32px 32px;
+    background-color: #27272A;
+    margin: 0.3em;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding: 1em 1em;
+    gap: 4em;
+}
+.session-details {
+    border: 1px solid #27272A;
+    color: white;
+    border-radius: 12px;
+    flex: 1 1 0;
+    padding: 24px 24px;
+
+}
+
+.session-details .top{
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.header-title h2{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    color: #A1A1AA;
+    margin: 0;
+}
+.header-title p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #71717A;
+    margin: 0;
+}
+.header-icono i{
+    color: #71717A;
+    font-size: 32px 32px;
+    background-color: #27272A;
+    margin: 0.3em;
+    padding: 8px;
+    border-radius: 4px;
+}
+.todo-list {
+    padding: 24px 24px;
+    border-radius: 12px;
+    color: white;
+    border: 1px solid #27272A;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+.line {
+    border: 1px solid #71717A;
+    margin: 0.5em 0px;
+}
+
+.frame1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.frame1 h3{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    color: #A1A1AA;
+    margin: 0;
+}
+.frame1 p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #71717A;
+    margin: 0;
+}
+.modo-actual{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.4em;
+    padding: 5px 5px;
+    border: 2px solid #74ab23;
+    border-radius: 4px;
+    color: #74ab23;
+    background-color: rgba(132, 204, 22, 0.1);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.modo-actual p {
+    color: #74ab23;
+}
+.proximo-modo{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.4em;
+    padding: 5px 5px;
+    border: 2px solid #06B6D4;
+    border-radius: 4px;
+    color: #06B6D4;
+    background-color: rgba(6, 182, 212, 0.1);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.proximo-modo p{
+    color: #06B6D4; 
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    user-select: none;
+}
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+#timer h2 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 800;
+    color: #E4E4E7;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.buttons i {
+    border-radius: 10px;
+    color: rgba(161, 161, 170, 1);
+    cursor: pointer;
+    visibility: hidden;
+}
+.fa-gear{
+    background-color: #3F3F46;
+    padding: 0.5em;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-play{
+    padding: 0.5em;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #52525B;
+}
+.fa-rotate-right{
+    background-color: #3F3F46;
+    padding: 0.5em;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Ajusta el ancho del círculo según tus necesidades */
+    height: 200px; /* Ajusta la altura del círculo según tus necesidades */
+    border-radius: 50%;
+    border: 12px solid #74AB23;
+    color: #E4E4E7;
+
+  }
+.circle:hover{
+    /*Añade un blur a todo menos a los botones*/
+    filter: blur(3px) brightness(0.5);
+}
+.circle:hover .buttons i{
+    visibility: visible;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Inter;
+    color: #71717A;
+    user-select: none;
+  }
+  
+  .my-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #27272A;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;    
+  }
+  
+  .my-checkbox:checked::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #84CC16;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-right: 5px;
+    
+  }
+
+  .task p {
+    flex: 1 1 0;
+  }
+
+  .input-container input {
+    background-color: #27272A;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    color: #71717A;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1em 0px;
+    flex: 1 1 0;
+  }
+  .input-container input:focus {
+    outline: none;
+  }
+  .input-container button{
+    background-color: #74AB23;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FAFAFA;
+    margin: 0.3em;
+  }
+
+    .input-container button:hover {
+        background-color: #74ab23;
+        cursor: pointer;
+    }
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav i {
+        margin: 0.3em 0px;
+        padding: 8px;
+    }
+
+    #cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 3em;
+        padding: 1em 1em;
+        gap: 4em;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+}
