@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pomodoro</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e29a2b42ba.js" crossorigin="anonymous"></script></head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Pomodoro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="contenedor">
-            <h1>Mr.Pomodoro</h1>
-            <p>El tiempo bien invertido es la clave del éxito a largo plazo.</p>
-        </div>
-            <nav>
-                <i class="fa-solid fa-lightbulb"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-language"></i>
-            </nav>
+      <div class="contenedor">
+        <h1>Mr.Pomodoro</h1>
+        <p>El tiempo bien invertido es la clave del éxito a largo plazo.</p>
+      </div>
+      <nav>
+        <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-cog"></i>
+        <a href="https://github.com/Uncheck4164">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </nav>
     </header>
-    <section id="cards-container">
-        <div class="session-details">
-            <div class="top">
-                <div class="header">
-                    <div class="header-title">
-                        <h2>Tiempo</h2>
-                        <p>Ciclos pomodoro</p>
-                    </div>
-                    <div class="header-icono">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="frame1">
-                    <div class="frame1-title">
-                        <h3>
-                            Modo actual:
-                        </h3>
-                        <p>Describe en el estado que te encuentras</p>
-                    </div>
-                    <div class="modo-actual">
-                        <p>Focus</p>
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                </div>
-                <div class="frame1">
-                    <div class="frame1-title">
-                    <h3>Proximo modo:</h3>
-                    <p>Proximo ciclo que se actiavara</p>
-                </div>
-                    <div class="proximo-modo">
-                        <p>pausa larga</p>
-                        <i class="fa-solid fa-mug-hot"></i>
-                    </div>
-                </div>
+
+    <div id="cards-container">
+      <div class="session-details">
+        <div class="top">
+          <div class="header">
+            <div class="header-title">
+              <h2>Tiempo</h2>
+              <p>Ciclos pomodoro</p>
             </div>
-            <div class="bottom">
-                <div class="circle">
-                    <div id="timer">
-                        <h2>90:00</h2>
-                    </div>
-                    <div class="buttons">
-                        <i class="fa-solid fa-gear"></i>
-                        <i class="fa-solid fa-play"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
-                    </div>
+            <div class="header-icono">
+              <i class="fas fa-clock"></i>
             </div>
+          </div>
+          <div class="line"></div>
+          <div class="frame1">
+            <div class="frame1-title">
+              <h3>Modo actual:</h3>
+              <p>Describe en el estado que te encuentras</p>
+            </div>
+            <div class="modo-actual">Focus</div>
+          </div>
+          <div class="frame1">
+            <div class="frame1-title">
+              <h3>Próximo modo:</h3>
+              <p>Próximo ciclo que se activará</p>
+            </div>
+            <div class="proximo-modo">pausa larga</div>
+          </div>
         </div>
-    </div>
-        <div class="todo-list">
-            <div class="header">
-                <div class="header-title">
-                    <h2>Lista de tareas</h2>
-                    <p>Objetivos de la sesión</p>
-                </div>
-                <div class="header-icono">
-                    <i class="fa-solid fa-list-check"></i>
-                </div>  
+        <div class="bottom">
+          <div class="circle">
+            <div id="timer">
+              <h2>25:00</h2>
             </div>
-            <div class="line"></div>
-            <div class="list-todo">
-            <label class="task">
-                <input type="checkbox" class="my-checkbox">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic deserunt voluptatem velit laudantium veniam obcaecati fugit et unde totam ipsum facilis beatae ea in nesciunt, doloribus architecto, illum natus omnis.</p>
-              </label>
-              <label class="task">
-                <input type="checkbox" class="my-checkbox">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque cumque eos totam? Ipsum modi cum vero alias asperiores tempora recusandae adipisci est, velit iusto maxime, hic, dolorum facere iste!</p>
-            </label>
-              <label class="task">
-                <input type="checkbox" class="my-checkbox">
-                Tarea 3
-              </label>
+            <div class="buttons">
+              <i class="fas fa-play" id="startButton"></i>
+              <i class="fas fa-gear" id="configButton"></i>
+              <i class="fas fa-rotate-right" id="resetButton"></i>
             </div>
-            <div class="input-container">
-                <!--Añade un input con un boton-->
-                <input type="text" placeholder="Añade una tarea">
-                <button id="add">Añadir</button>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="todo-list">
+        <div class="header">
+          <div class="header-title">
+            <h2>Lista de tareas</h2>
+            <p>Objetivos de la sesión</p>
+          </div>
+          <div class="header-icono">
+            <i class="fas fa-list-check"></i>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="list-todo">
+          <div class="task">
+            <input type="checkbox" class="my-checkbox" />
+            <p>Tarea 1</p>
+          </div>
+          <div class="task">
+            <input type="checkbox" class="my-checkbox" />
+            <p>Tarea 2</p>
+          </div>
+          <div class="task">
+            <input type="checkbox" class="my-checkbox" />
+            <p>Tarea 3</p>
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="text" placeholder="Añadir nueva tarea" />
+          <button>Añadir</button>
+        </div>
+      </div>
     </div>
 
-    </section>
+    <!-- Configuration Modal -->
+    <div id="configModal" class="modal">
+      <div class="modal-content">
+        <h2>Configurar Temporizador</h2>
+        <label for="studyTime">Tiempo de estudio (minutos):</label>
+        <input type="number" id="studyTime" min="1" max="60" value="25" />
+        <label for="breakTime">Tiempo de descanso (minutos):</label>
+        <input type="number" id="breakTime" min="1" max="30" value="5" />
+        <button id="saveConfig">Guardar</button>
+        <button id="closeModal">Cerrar</button>
+      </div>
+    </div>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
