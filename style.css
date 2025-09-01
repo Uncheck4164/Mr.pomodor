@@ -382,3 +382,16 @@ nav i {
 #closeModal:hover {
   background-color: var(--text-color-tertiary);
 }
+
+.completed p{
+  text-decoration-line: line-through;
+}
+
+.delete-btn {
+  background-color: var(--border-color);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-color);
+}

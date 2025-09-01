@@ -17,8 +17,10 @@
         <p>El tiempo bien invertido es la clave del éxito a largo plazo.</p>
       </div>
       <nav>
-        <i class="fas fa-chart-bar"></i>
-        <i class="fas fa-cog"></i>
+        <a href="chart.html">
+          <i class="fas fa-chart-bar"></i>
+        </a>
+          <i class="fas fa-cog"></i>
         <a href="https://github.com/Uncheck4164">
           <i class="fa-brands fa-github"></i>
         </a>
@@ -43,20 +45,20 @@
               <h3>Modo actual:</h3>
               <p>Describe en el estado que te encuentras</p>
             </div>
-            <div class="modo-actual">Focus</div>
+            <div class="modo-actual fa-solid fa-brain"> Focus</div>
           </div>
           <div class="frame1">
             <div class="frame1-title">
               <h3>Próximo modo:</h3>
               <p>Próximo ciclo que se activará</p>
             </div>
-            <div class="proximo-modo">pausa larga</div>
+            <div class="proximo-modo fa-solid fa-mug-hot"> pausa</div>
           </div>
         </div>
         <div class="bottom">
           <div class="circle">
             <div id="timer">
-              <h2>25:00</h2>
+              <h1>25:00</h2>
             </div>
             <div class="buttons">
               <i class="fas fa-play" id="startButton"></i>
@@ -81,22 +83,23 @@
           <div class="task">
             <input type="checkbox" class="my-checkbox" />
             <p>Tarea 1</p>
+            <button class="delete-btn">Eliminar</button>
           </div>
           <div class="task">
             <input type="checkbox" class="my-checkbox" />
             <p>Tarea 2</p>
+            <button class="delete-btn">Eliminar</button>
           </div>
-          <div class="task">
-            <input type="checkbox" class="my-checkbox" />
-            <p>Tarea 3</p>
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Añadir nueva tarea"
+              id="new-task-input"
+            />
+            <button id="add-task-btn">Añadir</button>
           </div>
-        </div>
-        <div class="input-container">
-          <input type="text" placeholder="Añadir nueva tarea" />
-          <button>Añadir</button>
         </div>
       </div>
-    </div>
 
     <!-- Configuration Modal -->
     <div id="configModal" class="modal">
